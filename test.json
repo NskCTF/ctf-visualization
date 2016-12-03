@@ -1,0 +1,405 @@
+{
+	"Teams": [
+		{
+			"ID": 1,
+			"Rank": 1,
+			"Name": "Localhost",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 0,
+			"AttackPercent": 0,
+			"Defence": 0,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 2,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 3,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 4,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 5,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 6,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 7,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 8,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 9,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 10,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 11,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 12,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 13,
+			"Rank": 2,
+			"Name": "test 13",
+			"Score": 100,
+			"ScorePercent": 0,
+			"Attack": 5,
+			"AttackPercent": 0,
+			"Defence": 10,
+			"DefencePercent": 0,
+			"Advisory": 100,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 14,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 15,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 16,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 17,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 18,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 19,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 20,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 21,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		},
+		{
+			"ID": 22,
+			"Rank": 2,
+			"Name": "test",
+			"Score": 0,
+			"ScorePercent": 0,
+			"Attack": 25,
+			"AttackPercent": 0,
+			"Defence": 100,
+			"DefencePercent": 0,
+			"Advisory": 0,
+			"AdvisoryPercent": 0,
+			"Status": [
+				2,
+				3,
+				2
+			]
+		}
+	],
+	"Services": [
+		"FooService",
+		"BarService",
+		"UdpService"
+	]
+}

@@ -1,0 +1,80 @@
+@import "cour.ttf";
+body {
+  background-color:  #111111; /*#b3deff; */
+}
+#battlelog p {
+  font-family: CONSOLAS, monospace;
+  font-size: 14pt;
+  line-height: 90%;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+.victim {
+  color: #ff0000;
+}
+.attack {
+  color: #00b300; /*#1e2edb;*/
+}
+.service {
+  color: #f4cf13;
+}
+#battlelog {
+  margin-top: 40px;
+  width: 400px;
+  height: 720px;
+  max-height: 720px;
+  float: left;
+  overflow-y: scroll;
+  /*color: #00b300;*/
+  color: #b3deff;
+  font-weight: normal;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+svg {
+  margin-left: 0;
+  display: block;
+}
+
+.my-qtip {
+  line-height: 90%;
+  font-family: sans-serif;
+  background: #ddd;
+  border: 2px solid #1e2edb;
+}
+.my-qtip .qtip-titlebar {
+padding: 5px;
+border: 3px solid #1e2edb;
+border-width: 0px 0px 2px 0px;
+background: #ddd;
+}
+.my-qtip .qtip-content{
+    padding: 5px;
+    line-height: 15%;
+    background: #ddd;
+    font-size: 16px;
+}
+.my-qtip .qtip-title {
+    padding-top: 5px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background: #ddd;
+    line-height: 16px;
+    font-size: 16px;
+}
+
+.my-qtip .qtip-content b {
+  text-shadow: 1px 1px 1px black;
+}
+
+#footer, #footer > *{
+  font-family: CONSOLAS, monospace;
+  color: #b3deff;
+  margin: 0px auto;
+  margin-top: 200px;
+  text-align: center;
+}
