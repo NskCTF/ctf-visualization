@@ -9,6 +9,11 @@ body {
   margin: 5px;
   margin-bottom: 10px;
 }
+#wrap {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .victim {
   color: #ff0000;
 }
@@ -18,7 +23,10 @@ body {
 .service {
   color: #f4cf13;
 }
-#battlelog {
+.clear {
+ clear: left; /* Отмена обтекания */
+}
+#battlelog, #scoreboard {
   margin-top: 40px;
   width: 400px;
   height: 720px;
@@ -26,7 +34,7 @@ body {
   float: left;
   overflow-y: scroll;
   /*color: #00b300;*/
-  color: #b3deff;
+  color: #afc6e8;
   font-weight: normal;
 }
 
@@ -35,26 +43,25 @@ body {
 }
 
 svg {
-  margin-left: 0;
   display: block;
 }
 
 .my-qtip {
   line-height: 90%;
   font-family: sans-serif;
-  background: #ddd;
-  border: 2px solid #1e2edb;
+  background: #afc6e8;
+  border: 2px solid #001d38;
 }
 .my-qtip .qtip-titlebar {
 padding: 5px;
-border: 3px solid #1e2edb;
+border: 3px solid #001d38;
 border-width: 0px 0px 2px 0px;
-background: #ddd;
+background: #afc6e8;
 }
 .my-qtip .qtip-content{
     padding: 5px;
     line-height: 15%;
-    background: #ddd;
+    background: #afc6e8;
     font-size: 16px;
 }
 .my-qtip .qtip-title {
@@ -62,7 +69,7 @@ background: #ddd;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    background: #ddd;
+    background: #afc6e8 ;
     line-height: 16px;
     font-size: 16px;
 }
@@ -73,7 +80,7 @@ background: #ddd;
 
 #footer, #footer > *{
   font-family: CONSOLAS, monospace;
-  color: #b3deff;
+  color: #afc6e8;
   margin: 0px auto;
   margin-top: 200px;
   text-align: center;

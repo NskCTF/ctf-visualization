@@ -1,7 +1,7 @@
 var data;
 request(false);
 var _status = ["<b style='color:green;'>UP</b>", "<b style='color:yellow;'>MUMBLE</b>", "<b style='color:orange;'>CORRUPT</b>", "<b style='color:red;'>DOWN</b>", "<b style='color:black;'>ERROR</b>", "<b style='color:black;'>UNKNOWN</b>"];
-var refreshTime = 6000; // 60 seconds
+var refreshTime = 40000; // 40 seconds
 var refInterval = window.setInterval('request(true)', refreshTime);
 var teams = 21, angle = 0, step = (2*Math.PI) / teams, container_size = 700, radius = 300;
 var svg = d3.select('#diagram').append('svg').attr('width', container_size).attr('height', container_size);
@@ -36,10 +36,10 @@ function teamInfo(id) {
   var team = data.Teams.filter(function( obj ) {
     return obj.ID == id;
   })[0];
-  content += "<p>Score: " + team.Score + " (" + team.ScorePercent + "%)</p>";
-  content += "<p>Attack: " + team.Attack + " (" + team.AttackPercent + "%)</p>";
-  content += "<p>Defense: " + team.Defence + " (" + team.DefencePercent + "%)</p>";
-  content += "<p>Advisory: " + team.Advisory + " (" + team.AdvisoryPercent + "%)</p>";
+  content += "<p>Score: " + Number((team.Score).toFixed(1)) + " (" + Number((team.ScorePercent).toFixed(1)) + "%)</p>";
+  content += "<p>Attack: " + Number((team.Attack).toFixed(1))  + " (" + Number((team.AttackPercent).toFixed(1))  + "%)</p>";
+  content += "<p>Defense: " + Number((team.Defence).toFixed(1)) + " (" + Number((team.DefencePercent).toFixed(1))  + "%)</p>";
+  content += "<p>Advisory: " + Number((team.Advisory).toFixed(1)) + " (" + Number((team.AdvisoryPercent).toFixed(1)) + "%)</p>";
   content += "<p align=center>Services:</p>";
   team.Status.forEach(function(item, i, arr) {
     content += "<p>"+ data.Services[i] + ": " + _status[team.Status[i]] + "</p>";
