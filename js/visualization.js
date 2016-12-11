@@ -7,7 +7,7 @@ var teams = 21, services = 4, angle = 0, step = (2*Math.PI) / teams, container_s
 var svg = d3.select('#diagram').append('svg').attr('width', container_size).attr('height', container_size);
 var _msg ="";
 // создать подключение
-var socket = new WebSocket("ws://" + location.host);
+var socket = new WebSocket("wss://" + location.host);
 var spark = new SparkMD5();
 // обработчик входящих сообщений
 socket.onopen = function() {
