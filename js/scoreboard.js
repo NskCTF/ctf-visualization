@@ -4,7 +4,7 @@ var _services = ["Voicemail", "Dr.Dre", "Pokemap", "MIS"];
 var _status = ["<b style='color:green;'>UP</b>", "<b style='color:yellow;'>MUMBLE</b>", "<b style='color:orange;'>CORRUPTED</b>", "<b style='color:red;'>DOWN</b>", "<b style='color:black;'>ERROR</b>", "<b style='color:black;'>UNKNOWN</b>"];
 function request(type) {
   $.ajax({
-    url: "http://localhost:8080/test.json?_=" + new Date().getTime(),
+    url: location.protocol + "//" + location.host + "/test/teams.json?_=" + new Date().getTime(),
     async: type,
     dataType: 'json',
     success: function(json) {
