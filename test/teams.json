@@ -3,7 +3,7 @@
 		{
 			"ID": 1,
 			"Rank": 1,
-			"Name": "Localhost",
+			"Name": "Lights Out",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 0,
@@ -21,7 +21,7 @@
 		{
 			"ID": 2,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "#miet",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -39,7 +39,7 @@
 		{
 			"ID": 3,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "h4rdF0rc3",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -57,7 +57,7 @@
 		{
 			"ID": 4,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "Corrupted Reflection",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -75,7 +75,7 @@
 		{
 			"ID": 5,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "epicteam",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -93,7 +93,7 @@
 		{
 			"ID": 6,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "KeD",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -111,7 +111,7 @@
 		{
 			"ID": 7,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "Alpha",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -129,7 +129,7 @@
 		{
 			"ID": 8,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "Delta",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -147,7 +147,7 @@
 		{
 			"ID": 9,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "MVD",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -165,7 +165,7 @@
 		{
 			"ID": 10,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "mstuca",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -183,7 +183,7 @@
 		{
 			"ID": 11,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "Shadow Servants",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -201,7 +201,7 @@
 		{
 			"ID": 12,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "BinaryBear",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -219,7 +219,7 @@
 		{
 			"ID": 13,
 			"Rank": 2,
-			"Name": "test 13",
+			"Name": "BalalaikaCr3w",
 			"Score": 100,
 			"ScorePercent": 0,
 			"Attack": 5,
@@ -237,7 +237,7 @@
 		{
 			"ID": 14,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "Kekchek",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -255,7 +255,7 @@
 		{
 			"ID": 15,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "Epsilons",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -273,7 +273,7 @@
 		{
 			"ID": 16,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "BadUSB",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -291,7 +291,7 @@
 		{
 			"ID": 17,
 			"Rank": 2,
-			"Name": "test",
+			"Name": "MSHP SSL",
 			"Score": 0,
 			"ScorePercent": 0,
 			"Attack": 25,
@@ -377,29 +377,12 @@
 				3,
 				2
 			]
-		},
-		{
-			"ID": 22,
-			"Rank": 2,
-			"Name": "test",
-			"Score": 0,
-			"ScorePercent": 0,
-			"Attack": 25,
-			"AttackPercent": 0,
-			"Defence": 100,
-			"DefencePercent": 0,
-			"Advisory": 0,
-			"AdvisoryPercent": 0,
-			"Status": [
-				2,
-				3,
-				2
-			]
 		}
 	],
 	"Services": [
-		"FooService",
-		"BarService",
-		"UdpService"
+		"VoiceMail",
+		"Dr. Dre",
+		"Pokemap",
+		"MIS"
 	]
 }

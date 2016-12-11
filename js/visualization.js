@@ -3,25 +3,29 @@ request(false);
 var _status = ["<b style='color:green;'>UP</b>", "<b style='color:yellow;'>MUMBLE</b>", "<b style='color:orange;'>CORRUPT</b>", "<b style='color:red;'>DOWN</b>", "<b style='color:black;'>ERROR</b>", "<b style='color:black;'>UNKNOWN</b>"];
 var refreshTime = 40000; // 40 seconds
 var refInterval = window.setInterval('request(true)', refreshTime);
-var teams = 21, angle = 0, step = (2*Math.PI) / teams, container_size = 700, radius = 300;
+var teams = 21, services = 4, angle = 0, step = (2*Math.PI) / teams, container_size = 700, radius = 300;
 var svg = d3.select('#diagram').append('svg').attr('width', container_size).attr('height', container_size);
-
+var _msg ="";
 // создать подключение
 var socket = new WebSocket("ws://localhost:8081");
-
+var spark = new SparkMD5();
 // обработчик входящих сообщений
 socket.onopen = function() {
   $("#battlelog").append("<p style='color:green;'>Connection succesfully established!</p>");
 };
 socket.onmessage = function(event) {
   var msg = JSON.parse(event.data);
-  attack(msg);
+  if(_msg != spark.append(event.data).end())
+  {
+    _msg = spark.append(event.data).end();
+    attack(msg);
+  }
 };
 
 // обновлялка запросов
 function request(type) {
   $.ajax({
-    url: "http://localhost:8080/test.json?_=" + new Date().getTime(),
+    url: location.protocol + "//" + location.host + "/test/teams.json?_=" + new Date().getTime(),
     async: type,
     dataType: 'json',
     success: function(json) {
@@ -62,7 +66,7 @@ function initSystem() {
     .attr('team_id', data.Teams[i].Name); // был #001d38
   }
   svg.append('image')
-.attr('xlink:href', "mctf.png")
+.attr('xlink:href', "img/mctf.png")
 .attr('width', 400)
 .attr('height', 400)
 .attr('x', container_size/2 - 180)
@@ -72,14 +76,21 @@ function initSystem() {
 $(document).ready(function()
 {
   initSystem();
-  /*
+
   // генератор атак
   setInterval( function() {
     var t1 = getRandomInt(1, teams + 1);
     var t2 = getRandomInt(1, teams + 1);
-    attack("team" + t1, "team" + t2, 1);
-  } , 1000)
-*/
+    var s = getRandomInt(1, services + 1);
+    fakeattack(t1, t2, s);
+  } , 800)
+  setInterval( function() {
+    var t1 = getRandomInt(1, teams + 1);
+    var t2 = getRandomInt(1, teams + 1);
+    var s = getRandomInt(1, services + 1);
+    fakeattack(t1, t2, s);
+  } , 1750)
+
   // MAKE SURE YOUR SELECTOR MATCHES SOMETHING IN YOUR HTML!!!
   $('rect').each(function() {
     $(this).qtip({
@@ -124,6 +135,36 @@ function attack(msg) {
   var date = new Date(msg.Timestamp*1000);
   var timestamp = date.getHours() + ':' + ("0" + date.getMinutes()).substr(-2) + ':' + ("0" + date.getSeconds()).substr(-2);
   var logger = $("<p>[" + timestamp + "] <b class='attack'>" + attack.attr('team_id') + "</b> attacked <b class='victim'>" + victim.attr('team_id') + "</b> on service <b class='service'>" + data.Services[msg.Service-1] +"</b></p>").hide();
+  if($("#battlelog > p").length > 25)
+    $("#battlelog").find('p:first').remove();
+  $("#battlelog").append(logger);
+  logger.show('normal');
+  $('#battlelog').animate({scrollTop: $('#battlelog').prop("scrollHeight")}, 0);
+};
+
+// генератор атак
+function fakeattack(t1, t2, service) {
+  var attack = d3.select("#team" + t1);
+  var victim = d3.select("#team" + t2);
+  var packet = svg.append('rect')
+  .attr('width', 20)
+  .attr('height', 20)
+  .attr('fill', '#ff0000')
+  .attr('x', attack.attr('x'))
+  .attr('y', attack.attr('y'))
+  .attr('text', 'KEK');
+  packet.transition()
+  .duration(800)
+  .attr('x', victim.attr('x'))
+  .attr('y', victim.attr('y'))
+  .attr('fill', 'green')
+  .transition()
+  .duration(300)
+  .attr('opacity', 0)
+  .remove();
+  var date = new Date();
+  var timestamp = date.getHours() + ':' + ("0" + date.getMinutes()).substr(-2) + ':' + ("0" + date.getSeconds()).substr(-2);
+  var logger = $("<p>[" + timestamp + "] <b class='attack'>" + attack.attr('team_id') + "</b> attacked <b class='victim'>" + victim.attr('team_id') + "</b> on service <b class='service'>" + data.Services[service-1] +"</b></p>").hide();
   if($("#battlelog > p").length > 25)
     $("#battlelog").find('p:first').remove();
   $("#battlelog").append(logger);
